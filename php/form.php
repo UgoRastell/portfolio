@@ -1,14 +1,5 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
-$dbname = "portfolio";
+$message = $_POST['message'];
+$headers ='FROM: site@local.dev';
 
-try {
-    $db = new PDO ('mysql:host;'$dbname, $username, $password);
-} catch (PDOException $e) {
-    print "Erreur: ". $e->getMessage()."<br/>";
-    die;
-}
-
-?>
+mail('ugorastell.dev@gmail.com', 'Formulaire de contact', $message, $headers);

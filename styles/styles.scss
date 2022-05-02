@@ -98,16 +98,6 @@ section{
 
 .active{
     display: block;
-    animation: scaleAnim 1s ease-in-out;
-    @keyframes scaleAnim {
-        0%{
-            transform: translateY(-100%) scaleY(0)
-        }
-
-        100%{
-            transform: translateY(0) scaleY(1)
-        }
-    }
 }
 
 
@@ -135,7 +125,7 @@ section{
         background-color: var(--color-grey-4);
         width: 55px;
         height: 55px;
-        border-radius: 50%;
+        border-radius: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -154,7 +144,7 @@ section{
     right: 3%;
     width: 70px;
     height: 70px;
-    border-radius: 50%;
+    border-radius: 10%;
     background-color: var(--color-grey-4);
     cursor: pointer;
     position: fixed;
@@ -332,7 +322,7 @@ section{
             background-color: var(--color-secondary);
             width: 50px;
             height: 50px;
-            border-radius: 50%;
+            border-radius: 10%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -357,7 +347,7 @@ section{
             span{
                 color: var(--color-grey-2);
                 font-weight: 500;
-                font-size: 1.2rem;
+                font-size: 0.2rem;
             }
         }
         p{
@@ -412,7 +402,7 @@ section{
                 align-items: center;
                 .icon{
                     background-color: var(--color-primary);
-                    border-radius: 50%;
+                    border-radius: 10%;
                     width: 50px;
                     height: 50px;
                     display: flex;
@@ -450,14 +440,14 @@ section{
     display: flex;
     padding-top: 3.5rem;
     .left-contact{
-        flex: 2;
+        flex: 3;
         h4{
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
         }
         p{
-            margin: 1rem 0;
+            margin: 2rem 0;
             line-height: 2rem;
         }
 
@@ -494,7 +484,7 @@ section{
                 justify-content: center;
                 width: 50px;
                 height: 50px;
-                border-radius: 50%;
+                border-radius: 10%;
                 margin: 0 .4rem;
                 transition: all .4s ease-in-out;
                 &:hover{
@@ -523,7 +513,7 @@ section{
                 font-weight: inherit;
                 font-size: inherit;
                 font-family: inherit;
-                padding: .8rem 1.1rem;
+                padding: .6rem 1.1rem;
                 outline: none;
                 border: none;
                 background-color: var(--color-grey-5);
@@ -556,7 +546,7 @@ section{
     color: inherit;
     font-weight: 600;
     position: relative;
-    border: 1px solid var(--color-secondary);
+    border: 2px solid var(--color-secondary);
     display: flex;
     align-self: flex-start;
     display: flex;
@@ -570,7 +560,7 @@ section{
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 10%;
         padding: 1rem;
     }
     &::before{
@@ -602,8 +592,9 @@ section{
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 700;
-        span{
+        span {
             color: var(--color-secondary);
+            
         }
         .bg-text{
             position: absolute;

@@ -314,7 +314,7 @@
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
+                                    <p>Location</p>
                                 </div>
                                 <p>
                                     : Rouen, France
@@ -323,37 +323,37 @@
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-envelope"></i>
-                                    <span>Mail</span>
+                                    <p>Mail</p>
                                 </div>
                                 <p>
-                                    <span>: maclinzuniversal@gmail.com</span>
+                                    <p>: ugorastell.dev@gmail.com</p>
                                 </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-user-graduate"></i>
-                                    <span>Éducation</span>
+                                    <p>Éducation</p>
                                 </div>
                                 <p>
-                                    <span>: Normandie Web School</span>
+                                    <p>: Normandie Web School</p>
                                 </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Numéro de téléphone</span>
+                                    <i class="fa fa-phone"></i>
+                                    <p>Numéro de téléphone</p>
                                 </div>
                                 <p>
-                                    <span>: 06 95 05 18 98</span>
+                                    <p>: 0695051898</p>
                                 </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
+                                    <i class="fas fa-globe-europe"></i>
+                                    <p>Languages</p>
                                 </div>
                                 <p>
-                                    <span>: France</span>
+                                    <p>: France</p>
                                 </p>
                             </div>
                         </div>
@@ -366,27 +366,29 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="form.php" class="contact-form">
+                        <form action="./php/form.php" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="Prénom">
-                                <input type="text" required placeholder="Nom">
-                                <input type="email" required placeholder="Mail">
+                                <input type="text" name="first_name" required placeholder="Prénom">
+                                <input type="text" name="name" required placeholder="Nom">
                             </div>
                             <div class="input-control">
-                                <select>
+                                <input type="email" name="email" required placeholder="Mail">
+                            </div>
+                            <div class="input-control">
+                                <select name="object">
                                     <option>Recrutement</option>
                                     <option>ddddddd</option>
                                     <option>ddddddd</option>
                                 </select>
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message ici..."></textarea>
+                                <textarea name="message" id="" cols="15" rows="8" placeholder="Message ici..."></textarea>
                             </div>
                             <div class="submit-btn">
-                                <a href="#" class="main-btn">
+                                <button type="submit" href="./php/form.php" method="POST" class="main-btn">
                                     <span class="btn-text">Envoyer</span>
                                     <span class="btn-icon"><i class="fas fa-envelope"></i></span>
-                                </a>
+                                </button>
                             </div>
                         </form>
                     </div>
