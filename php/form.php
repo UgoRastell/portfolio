@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 $errors = [];
 
 if(!array_key_exists('first_name', $_POST) || $_POST['first_name'] == ''){
@@ -36,8 +35,6 @@ if(!empty($errors)){
     header('Location: /portfolio/');
 }
 
- 
-=======
 $message = $_POST['message'];
 $headers ='FROM: site@local.dev';
 
