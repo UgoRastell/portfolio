@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -314,7 +318,7 @@
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
+                                    <p>Location</p>
                                 </div>
                                 <p>
                                     : Rouen, France
@@ -323,37 +327,37 @@
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-envelope"></i>
-                                    <span>Mail</span>
+                                    <p>Mail</p>
                                 </div>
                                 <p>
-                                    <span>: maclinzuniversal@gmail.com</span>
+                                    <p>: ugorastell.dev@gmail.com</p>
                                 </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-user-graduate"></i>
-                                    <span>Éducation</span>
+                                    <p>Éducation</p>
                                 </div>
                                 <p>
-                                    <span>: Normandie Web School</span>
+                                    <p>: Normandie Web School</p>
                                 </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Numéro de téléphone</span>
+                                    <i class="fa fa-phone"></i>
+                                    <p>Numéro de téléphone</p>
                                 </div>
                                 <p>
-                                    <span>: 06 95 05 18 98</span>
+                                    <p>: 0695051898</p>
                                 </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
+                                    <i class="fas fa-globe-europe"></i>
+                                    <p>Languages</p>
                                 </div>
                                 <p>
-                                    <span>: France</span>
+                                    <p>: France</p>
                                 </p>
                             </div>
                         </div>
@@ -366,27 +370,44 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="form.php" class="contact-form">
+                    
+                    <?php 
+                    if(array_key_exists('errors',$_SESSION)):?>
+                        <div class="alert alert-danger">
+                            <?= implode(', ',$_SESSION['errors']);?>
+                        </div>
+                        <?php unset($_SESSION['errors']); endif; ?>
+                    
+                    <?php 
+                    if(array_key_exists('success',$_SESSION)):?>
+                        <div class="alert alert-success">
+                            Message envoyé.
+                        </div>
+                        <?php unset($_SESSION['errors']); endif; ?>
+                        
+                        
+                        <form action="./php/form.php" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="Prénom">
-                                <input type="text" required placeholder="Nom">
-                                <input type="email" required placeholder="Mail">
+                                <input type="text" name="first_name" required placeholder="Prénom" value="<?= isset($_SESSION['inputs']['first_name']) ? $_SESSION['inputs']['first_name'] : ''; ?>">
+                                <input type="text" name="name" required placeholder="Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
                             </div>
                             <div class="input-control">
-                                <select>
-                                    <option>Recrutement</option>
-                                    <option>ddddddd</option>
-                                    <option>ddddddd</option>
+                                <input type="email" name="email" required placeholder="Mail" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>">
+                            </div>
+                            <div class="input-control">
+                                <select name="sujet">
+                                    <option value="0">Recrutement</option>
+                                    <option value="1">ddddddd</option>
+                                    <option value="2">ttttttt</option>
                                 </select>
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message ici..."></textarea>
+                                <textarea name="message" id="" cols="15" rows="8" required placeholder="Message ici..."><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
                             </div>
                             <div class="submit-btn">
-                                <a href="#" class="main-btn">
+                                <button href="./php/form.php" class="">
                                     <span class="btn-text">Envoyer</span>
-                                    <span class="btn-icon"><i class="fas fa-envelope"></i></span>
-                                </a>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -417,3 +438,9 @@
     <script src="./js/theme.js"></script>
 </body>
 </html>
+
+<?php
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+unset($_SESSION['errors']);
+?>
