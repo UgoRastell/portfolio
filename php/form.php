@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $errors = [];
 
 if(!array_key_exists('first_name', $_POST) || $_POST['first_name'] == ''){
@@ -36,3 +37,9 @@ if(!empty($errors)){
 }
 
  
+=======
+$message = $_POST['message'];
+$headers ='FROM: site@local.dev';
+
+mail('ugorastell.dev@gmail.com', 'Formulaire de contact', $message, $headers);
+>>>>>>> 51945e58ae469ad52e7dbbb59dd13104dda7629d
