@@ -370,7 +370,6 @@
                         </div>
                     </div>
                     <div class="right-contact">
-<<<<<<< HEAD:index.php
                     
                     <?php 
                     if(array_key_exists('errors',$_SESSION)):?>
@@ -408,7 +407,7 @@
                             <div class="submit-btn">
                                 <button href="./php/form.php" class="">
                                     <span class="btn-text">Envoyer</span>
-=======
+
                         <form action="./php/form.php" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
                                 <input type="text" name="first_name" required placeholder="Prénom">
@@ -431,7 +430,6 @@
                                 <button type="submit" href="./php/form.php" method="POST" class="main-btn">
                                     <span class="btn-text">Envoyer</span>
                                     <span class="btn-icon"><i class="fas fa-envelope"></i></span>
->>>>>>> 51945e58ae469ad52e7dbbb59dd13104dda7629d:index.html
                                 </button>
                             </div>
                         </form>
