@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="KKKKKKKKKK"></meta>
 </head>
 <body class="main-content">
     <header class="section sec1 header active" id="home">
@@ -22,7 +20,7 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/photo_ugo.JPG" alt="">
+                    <img src="img/photo_ugo.jpg" alt="photo de Ugo RASTELL">
                 </div>
             </div>
             <div class="right-header">
@@ -31,15 +29,10 @@
                     Un Web Developpeur.
                 </h1>
                 <p>
-                    I'm a Web Developer, I love to create beautiful and functional websites.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
+                    fffffffffffffffffffffffffffffffffffffffffffffffff
                 </p>
                 <div class="btn-con">
-                    <a href="" class="main-btn">
-                        <span class="btn-text">Telecharger le CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
+                    <input type="submit" value="Telecharger CV ">
                 </div>
             </div>
         </div>
@@ -47,62 +40,41 @@
     <main>
         <section class="section sec2 about" id="about">
             <div class="main-title">
-                <h2>À propos<span> de moi</span><span class="bg-text">mes statistiques</span></h2>
+                <h2>À propos<span> de moi</span></h2>
             </div>
             <div class="about-container">
                 <div class="left-about">
                     <h4>Informations à propos de moi</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
-                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                        delectus dolore fugiat exercitationem a, 
-                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Harum non necessitatibus deleniti eum soluta.
+                        
                     </p>
                     <div class="btn-con">
-                        <a href="#" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
+                        <input type="submit" value="Telecharger CV ">
                     </div>
                 </div>
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">650+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
+                            <p class="small-text">Projets <br /> Completés</p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">10+</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">300+</p>
-                            <p class="small-text">Happy <br /> Clients</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">400+</p>
-                            <p class="small-text">Customer <br /> reviews</p>
+                            <p class="small-text">Années <br /> d'experience</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <h4 class="stat-title">My Timeline</h4>
+            <h4 class="stat-title">Mon parcours</h4>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2010 - present</p>
-                    <h5>Web Developer<span> - Vircrosoft</span></h5>
+                    <h5>Web Developer</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
@@ -112,7 +84,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2008 - 2011</p>
-                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
+                    <h5>Software Engineer</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
@@ -122,7 +94,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2016 - 2017</p>
-                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
+                    <h5>C++ Programmer</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
@@ -132,7 +104,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2009 - 2013</p>
-                    <h5>Business Degree<span> - Sussex University</span></h5>
+                    <h5>Business Degree</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
@@ -142,7 +114,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2013 - 2016</p>
-                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
+                    <h5>Computer Science Degree<</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
@@ -152,7 +124,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <p class="tl-duration">2017 - present</p>
-                    <h5>3d Animation<span> - Brighton University</span></h5>
+                    <h5>3d Animation</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
                     </p>
@@ -161,46 +133,35 @@
         </section>
         <section class="section sec3" id="portfolio">
             <div class="main-title">
-                <h2>Mon <span>Portfolio</span><span class="bg-text">Mon Travail</span></h2>
+                <h2>Mon <span>Portfolio</span></h2>
             </div>
             <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
+                Mon travail avec plusieur langue de programmations
             </p>
             <div class="portfolios">
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port1.jpg" alt="">
+                        <img src="img/port1.jpg" alt="Main qui ecrit avec un clavier">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3></h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port2.jpg" alt="">
+                        <img src="img/port2.jpg" alt="Ecran d'oradinateur qui montre des objets de couleurs rose ">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
@@ -210,16 +171,10 @@
                         <img src="img/port3.jpg" alt="">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
@@ -229,16 +184,10 @@
                         <img src="img/port4.jpg" alt="">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
@@ -248,16 +197,10 @@
                         <img src="img/port5.jpg" alt="">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
@@ -267,16 +210,10 @@
                         <img src="img/port2.jpg" alt="">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
@@ -286,16 +223,10 @@
                         <img src="img/port7.jpg" alt="">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Source du projet</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
@@ -305,60 +236,50 @@
         <section class="section sec5 contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
-                    <h2>Contact <span>moi</span><span class="bg-text">Contact</span></h2>
+                    <h2>Contact <span>moi</span></h2>
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
                         <h4>Contact moi ici</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                            
                         </p>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <p>Location</p>
+                                    <p>
+                                        Location : Rouen, France
+                                    </p>
                                 </div>
-                                <p>
-                                    : Rouen, France
-                                </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-envelope"></i>
-                                    <p>Mail</p>
+                                    <p>
+                                    Mail : ugorastell.dev@gmail.com
+                                    </p>
                                 </div>
-                                <p>
-                                    <p>: ugorastell.dev@gmail.com</p>
-                                </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-user-graduate"></i>
-                                    <p>Éducation</p>
+                                    <p>
+                                        Éducation : Normandie Web School
+                                    </p>
                                 </div>
-                                <p>
-                                    <p>: Normandie Web School</p>
-                                </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fa fa-phone"></i>
-                                    <p>Numéro de téléphone</p>
+                                    <p>Numéro de téléphone : 06-95-05-18-98</p>
                                 </div>
-                                <p>
-                                    <p>: 0695051898</p>
-                                </p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-globe-europe"></i>
-                                    <p>Languages</p>
+                                    <p>Langage : France</p>
                                 </div>
-                                <p>
-                                    <p>: France</p>
-                                </p>
                             </div>
                         </div>
                         <div class="contact-icons">
@@ -370,68 +291,28 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                    
-                    <?php 
-                    if(array_key_exists('errors',$_SESSION)):?>
-                        <div class="alert alert-danger">
-                            <?= implode(', ',$_SESSION['errors']);?>
-                        </div>
-                        <?php unset($_SESSION['errors']); endif; ?>
-                    
-                    <?php 
-                    if(array_key_exists('success',$_SESSION)):?>
-                        <div class="alert alert-success">
-                            Message envoyé.
-                        </div>
-                        <?php unset($_SESSION['errors']); endif; ?>
-                        
-                        
-                        <form action="./php/form.php" method="POST" class="contact-form">
+                        <form action="./php/controller.php" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" name="first_name" required placeholder="Prénom" value="<?= isset($_SESSION['inputs']['first_name']) ? $_SESSION['inputs']['first_name'] : ''; ?>">
-                                <input type="text" name="name" required placeholder="Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
+                                <input type="text" name="first_name" value="" placeholder="Prénom">
                             </div>
-                            <div class="input-control">
-                                <input type="email" name="email" required placeholder="Mail" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>">
+                            <div class="input-control i-c-2">
+                                <input type="text" name="lastname" value="" placeholder="Nom">
                             </div>
-                            <div class="input-control">
-                                <select name="sujet">
-                                    <option value="0">Recrutement</option>
+                            <div class="input-control i-c-2">
+                                <input type="email" name="email" value="" placeholder="Email">
+                            </div>
+                            <div class="input-control i-c-2">
+                                <select name="objets">
+                                    <option value="objets">Objets</option>
                                     <option value="1">ddddddd</option>
                                     <option value="2">ttttttt</option>
+                                    <option value="3">ttttttt</option>
                                 </select>
                             </div>
-                            <div class="input-control">
-                                <textarea name="message" id="" cols="15" rows="8" required placeholder="Message ici..."><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <button href="./php/form.php" class="">
-                                    <span class="btn-text">Envoyer</span>
-
-                        <form action="./php/form.php" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" name="first_name" required placeholder="Prénom">
-                                <input type="text" name="name" required placeholder="Nom">
+                                <textarea name="text_message" id="" cols="15" rows="8" placeholder="Ecrivez ici..." maxlength="2000"></textarea>
                             </div>
-                            <div class="input-control">
-                                <input type="email" name="email" required placeholder="Mail">
-                            </div>
-                            <div class="input-control">
-                                <select name="object">
-                                    <option>Recrutement</option>
-                                    <option>ddddddd</option>
-                                    <option>ddddddd</option>
-                                </select>
-                            </div>
-                            <div class="input-control">
-                                <textarea name="message" id="" cols="15" rows="8" placeholder="Message ici..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <button type="submit" href="./php/form.php" method="POST" class="main-btn">
-                                    <span class="btn-text">Envoyer</span>
-                                    <span class="btn-icon"><i class="fas fa-envelope"></i></span>
-                                </button>
-                            </div>
+                                <input type="submit" name ="insert" value="Envoyer">
                         </form>
                     </div>
                 </div>
@@ -461,9 +342,3 @@
     <script src="./js/theme.js"></script>
 </body>
 </html>
-
-<?php
-unset($_SESSION['inputs']);
-unset($_SESSION['success']);
-unset($_SESSION['errors']);
-?>

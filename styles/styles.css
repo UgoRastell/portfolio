@@ -25,14 +25,14 @@
 .light-mode {
   --color-primary: #FFFFFF;
   --color-secondary: #7DCBDE;
-  --color-white: #454e56;
+  --color-white: white;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
   --color-grey-2: #6c7983;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
+  --color-grey-5: #e5e5e5;
   --color-grey-6: #12181b;
 }
 
@@ -133,7 +133,7 @@ section {
 }
 
 .controlls .active-btn i {
-  color: var(--color-white) !important;
+  color: var(--color-black) !important;
 }
 
 .controlls .control {
@@ -159,7 +159,7 @@ section {
 
 .controlls .control i {
   font-size: 1.2rem;
-  color: var(--color-grey-2);
+  color: var(--color-white);
   pointer-events: none;
 }
 
@@ -192,7 +192,7 @@ section {
 
 .theme-btn i {
   font-size: 1.4rem;
-  color: var(--color-grey-2);
+  color: var(--color-white);
   pointer-events: none;
 }
 
@@ -228,11 +228,9 @@ section {
 }
 
 .header-content .left-header .image {
-  border-radius: var(--br-sm-2);
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-black);
 }
 
 .header-content .left-header .image img {
@@ -240,15 +238,6 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.header-content .left-header .image img:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 .header-content .right-header {
@@ -396,7 +385,7 @@ section {
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-5);
+  border-left: 1px solid var(--color-white);
 }
 
 .timeline .timeline-item .tl-icon {
@@ -446,7 +435,7 @@ section {
 }
 
 .timeline .timeline-item p {
-  color: var(--color-grey-2);
+  color: var(--color-white);
 }
 
 .port-text {
@@ -692,6 +681,30 @@ section {
   resize: none;
 }
 
+.contact-content-con .right-contact .input-control ::-webkit-input-placeholder {
+  color: #c9c9c9;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact-content-con .right-contact .input-control :-ms-input-placeholder {
+  color: #c9c9c9;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact-content-con .right-contact .input-control ::-ms-input-placeholder {
+  color: #c9c9c9;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact-content-con .right-contact .input-control ::placeholder {
+  color: #c9c9c9;
+  opacity: 1;
+  /* Firefox */
+}
+
 .contact-content-con .right-contact .i-c-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,6 +790,19 @@ section {
   transition: all .4s ease-out;
 }
 
+input[type=submit] {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+}
+
 .main-title {
   text-align: center;
 }
@@ -796,9 +822,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--color-grey-5);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  color: var(--color-black);
   z-index: -1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
