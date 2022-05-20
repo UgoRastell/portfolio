@@ -10,6 +10,7 @@
   --color-primary: #191d2b;
   --color-secondary: #7DCBDE;
   --color-white: #FFFFFF;
+  --color-white-2: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -25,12 +26,13 @@
 .light-mode {
   --color-primary: #FFFFFF;
   --color-secondary: #7DCBDE;
-  --color-white: white;
+  --color-white: #454e56;
+  --color-white-2: white;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
   --color-grey-2: #6c7983;
-  --color-grey-3: #6c7983;
+  --color-grey-3: #c26060;
   --color-grey-4: #454e56;
   --color-grey-5: #e5e5e5;
   --color-grey-6: #12181b;
@@ -133,13 +135,13 @@ section {
 }
 
 .controlls .active-btn i {
-  color: var(--color-black) !important;
+  color: var(--color-white-2) !important;
 }
 
 .controlls .control {
   padding: 1rem;
   cursor: pointer;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-white-2);
   width: 55px;
   height: 55px;
   border-radius: 10%;
@@ -169,7 +171,7 @@ section {
   width: 70px;
   height: 70px;
   border-radius: 10%;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-white-2);
   cursor: pointer;
   position: fixed;
   display: -webkit-box;
@@ -788,6 +790,14 @@ section {
           transform: translateX(0);
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-success {
+  color: green;
 }
 
 input[type=submit] {

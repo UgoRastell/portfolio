@@ -1,7 +1,11 @@
 
+<?php 
+    session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <?php $sujets = ['ALTERNANCE', 'TEST1', 'TEST2'] ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -272,7 +276,7 @@
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fa fa-phone"></i>
-                                    <p>Numéro de téléphone : 06-95-05-18-98</p>
+                                    <p>Numéro de téléphone : 0695051898</p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -291,26 +295,39 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="./php/controller.php" method="POST" class="contact-form">
+                        <form action="./php/controller.php" method="POST" class="contact-form" id="myForm">
+
+                            <?php if(array_key_exists('errors', $_SESSION)): ?>
+                                <div class="alert-danger">
+                                    <?= implode('<p></p>', $_SESSION['errors']); ?>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if(array_key_exists('success', $_SESSION)): ?>
+                                <div class="alert-success">
+                                  Le message a bien été envoyé
+                                </div>
+                            <?php endif; ?>
+
                             <div class="input-control i-c-2">
-                                <input type="text" name="first_name" value="" placeholder="Prénom">
+                                <input type="text" name="first_name" id="first_name" value="<?= isset($_SESSION['inputs']['first_name']) ? $_SESSION['inputs']['first_name'] : ''; ?>" placeholder="Prénom">
                             </div>
                             <div class="input-control i-c-2">
-                                <input type="text" name="lastname" value="" placeholder="Nom">
+                                <input type="text" name="lastname" id="lastname" value="<?= isset($_SESSION['inputs']['lastname']) ? $_SESSION['inputs']['lastname'] : ''; ?>" placeholder="Nom">
                             </div>
                             <div class="input-control i-c-2">
-                                <input type="email" name="email" value="" placeholder="Email">
+                                <input type="email" name="email" id="email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>" placeholder="Email">
                             </div>
                             <div class="input-control i-c-2">
-                                <select name="objets">
-                                    <option value="objets">Objets</option>
-                                    <option value="1">ddddddd</option>
-                                    <option value="2">ttttttt</option>
-                                    <option value="3">ttttttt</option>
+                                <select name="objets" id="objets" value="<?= isset($_SESSION['inputs']['objets']) ? $_SESSION['inputs']['objets'] : ''; ?>">
+                                    <option value="">CHOISSISEZ UN SUJET</option>
+                                    <option value="TEST">TEST</option>
+                                    <option value="TEST1">ttttttt</option>
+                                    <option value="TEST2">ttttttt</option>
                                 </select>
                             </div>
                             <div class="input-control i-c-2">
-                                <textarea name="text_message" id="" cols="15" rows="8" placeholder="Ecrivez ici..." maxlength="2000"></textarea>
+                                <textarea name="text_message" id="message" cols="15" rows="8" placeholder="Ecrivez ici..." maxlength="2000" ><?= isset($_SESSION['inputs']['text_message']) ? $_SESSION['inputs']['text_message'] : ''; ?></textarea>
                             </div>
                                 <input type="submit" name ="insert" value="Envoyer">
                         </form>
@@ -340,5 +357,12 @@
     </div>
     <script src="./js/app.js"></script>
     <script src="./js/theme.js"></script>
+    <script src="./js/validateForm.js"></script>
 </body>
 </html>
+
+<?php
+    unset($_SESSION['inputs']);
+    unset($_SESSION['success']);
+    unset($_SESSION['errors']);
+?>
