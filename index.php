@@ -297,6 +297,10 @@
                     <div class="right-contact">
                         <form action="./php/controller.php" method="POST" class="contact-form" id="myForm">
 
+                        <?php if(array_key_exists('errors', $_SESSION)): ?>
+                            <script>alert("<?php echo htmlspecialchars("Le message n a pas été envoyé veuillez bien vérifiés si tous les champs ont bien été remplis.", ENT_QUOTES); ?>")</script>
+                        <?php endif; ?>
+                            
                             <?php if(array_key_exists('errors', $_SESSION)): ?>
                                 <div class="alert-danger">
                                     <?= implode('<p></p>', $_SESSION['errors']); ?>
@@ -305,7 +309,7 @@
 
                             <?php if(array_key_exists('success', $_SESSION)): ?>
                                 <div class="alert-success">
-                                  Le message a bien été envoyé
+                                    <script>alert("<?php echo htmlspecialchars('Le message a bien été envoyé', ENT_QUOTES); ?>")</script>
                                 </div>
                             <?php endif; ?>
 
@@ -319,11 +323,11 @@
                                 <input type="email" name="email" id="email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>" placeholder="Email">
                             </div>
                             <div class="input-control i-c-2">
-                                <select name="objets" id="objets" value="<?= isset($_SESSION['inputs']['objets']) ? $_SESSION['inputs']['objets'] : ''; ?>">
-                                    <option value="">CHOISSISEZ UN SUJET</option>
-                                    <option value="TEST">TEST</option>
-                                    <option value="TEST1">ttttttt</option>
-                                    <option value="TEST2">ttttttt</option>
+                                <select name="objets" id="objets" style="font-family: 'Poppins', sans-serif;" value="<?= isset($_SESSION['inputs']['objets']) ? $_SESSION['inputs']['objets'] : ''; ?>">
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="TEST">Test</option>
+                                    <option value="TEST1">Test1</option>
+                                    <option value="TEST2">Test2</option>
                                 </select>
                             </div>
                             <div class="input-control i-c-2">
